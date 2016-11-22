@@ -2,7 +2,7 @@
 //conexion con la base
 
 $link=mysql_connect("localhost","root","")or die("<h2>No se encuentra el servicio<h2>");
-$db=mysql_select_db("estudiante",$link)or die("<h2>Error de conexion<h2>");
+$db=mysql_select_db("general",$link)or die("<h2>Error de conexion<h2>");
 
 //Datos de formulario
 
@@ -18,7 +18,7 @@ $req=(strlen($nombre)*strlen($apellidos)*strlen($edad)*strlen($fecha)*strlen($ce
 
 //ingresamos la informacion en la base de datos
 
-mysql_query("INSERT INTO estudiates VALUES("","$nombre","$apellidos","$edad","$fecha","$celulares")",$link)or die("<h2>Error de envio</h2>");
+mysql_query("INSERT INTO general VALUES("","$nombre","$apellidos","$edad","$fecha","$celulares")",$link)or die("<h2>Error de envio</h2>");
 echo '
 	<h2>Registro completado</h2>
 ?>
