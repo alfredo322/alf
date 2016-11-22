@@ -6,7 +6,7 @@ class Formulario_model extends CI_Model{
 		$this->load->database();
 	}
 	public function crearPerfil($data){
-		$this->db->insert('maestra1k',array('Nombres'=>$data['Nombres'],'Apellidos'=>$data['Apellidos'],'Edad'=>$data['Edad'],'Fecha_nacimiento'=>$data['Fecha de nacimiento']));
+		$this->db->insert('maestra',array('Nombres'=>$data['Nombres'],'Apellidos'=>$data['Apellidos'],'Edad'=>$data['Edad'],'Fecha_nacimiento'=>$data['Fecha de nacimiento']));
 	}
 	
 
